@@ -173,7 +173,7 @@ function renderAgents() {
     else badge = h("span", { class: "badge ok" }, String(a.count))
     body.append(
       h("tr", { class: live ? "" : "off" },
-        h("td", {}, h("div", { class: "name" }, a.name), a.installed && a.reason ? h("div", { class: "sub" }, a.reason) : null),
+        h("td", {}, h("div", { class: "name" }, a.name), a.installed && a.reason ? h("div", { class: "sub" }, a.reason === "history only" ? L.readOnly : a.reason) : null),
         h("td", {}, badge),
         tick("source", a.capabilities.read),
         tick("target", a.capabilities.write && a.writable !== false),
@@ -427,5 +427,6 @@ refresh()
 setInterval(() => {
   if (!document.hidden) refresh()
 }, 15000)
+
 
 
