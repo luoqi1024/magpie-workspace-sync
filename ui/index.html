@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Workspace Sync</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-token="__WSYNC_TOKEN__">
+<main>
+  <header>
+    <h1 id="title"></h1>
+    <span id="chip" class="chip"></span>
+  </header>
+  <p id="lead" class="lead"></p>
+  <div id="error" class="banner error" hidden></div>
+
+  <section class="card">
+    <div class="card-head">
+      <h2 id="agentsTitle"></h2>
+      <div class="presets">
+        <button id="mirror" class="ghost"></button>
+        <label class="inline"><span id="tmplLabel"></span> <select id="tmplPick"></select></label>
+        <button id="tmplGo" class="ghost"></button>
+      </div>
+    </div>
+    <table id="agents">
+      <thead><tr><th id="thAgent"></th><th id="thCount"></th><th id="thSource"></th><th id="thTarget"></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p id="agentsHint" class="hint"></p>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2 id="autoTitle"></h2>
+      <label class="switch"><input id="autoOn" type="checkbox"><span></span></label>
+    </div>
+    <p id="autoText" class="hint"></p>
+    <label class="inline"><span id="everyLabel"></span> <select id="every"></select></label>
+    <p id="autoStatus" class="hint"></p>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2 id="syncTitle"></h2>
+      <button id="check" class="primary"></button>
+    </div>
+    <div id="plan"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2 id="histTitle"></h2></div>
+    <ul id="history" class="history"></ul>
+    <p id="dataDir" class="hint mono"></p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
