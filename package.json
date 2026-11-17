@@ -1,62 +1,69 @@
 {
-  "name": "magpie-workspace-sync",
-  "version": "0.1.0",
-  "description": "A magpie plugin that keeps the workspace (project) lists of your AI agents in sync: Codex, Antigravity, DeepSeek Harness and more. One click or automatic.",
-  "type": "module",
-  "main": "index.js",
-  "license": "MIT",
-  "author": "luoqi1024",
-  "keywords": [
-    "magpie",
-    "magpie-plugin",
-    "opencode-plugin",
-    "workspace",
-    "projects",
-    "sync",
-    "codex",
-    "antigravity",
-    "deepseek-harness",
-    "cursor",
-    "claude-code"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luoqi1024/magpie-workspace-sync.git"
-  },
-  "homepage": "https://github.com/luoqi1024/magpie-workspace-sync#readme",
-  "bugs": {
-    "url": "https://github.com/luoqi1024/magpie-workspace-sync/issues"
-  },
-  "engines": {
-    "node": ">=22"
-  },
-  "files": [
-    "index.js",
-    "src",
-    "page",
-    "ui",
-    "README.md",
-    "README.zh-CN.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "test": "node --test --no-warnings \"test/**/*.test.js\""
-  },
-  "magpie": {
-    "page": {
-      "title": "Workspace Sync",
-      "titles": {
-        "zh": "工作区同步",
-        "zh-TW": "工作區同步",
-        "ja": "ワークスペース同期"
-      },
-      "file": "page/index.html",
-      "icon": "page/icon.svg",
-      "keepAlive": false,
-      "service": {
-        "port": 3481,
-        "option": "port"
-      }
-    }
-  }
+    "name":  "magpie-workspace-sync",
+    "version":  "0.1.0",
+    "description":  "A magpie plugin that keeps the workspace (project) lists of your AI agents in sync: Codex, Antigravity, DeepSeek Harness and more. One click or automatic.",
+    "type":  "module",
+    "main":  "index.js",
+    "license":  "MIT",
+    "author":  "luoqi1024",
+    "keywords":  [
+                     "magpie",
+                     "magpie-plugin",
+                     "magpie-page",
+                     "opencode-plugin",
+                     "workspace",
+                     "projects",
+                     "sync",
+                     "codex",
+                     "antigravity",
+                     "deepseek-harness",
+                     "cursor",
+                     "claude-code"
+                 ],
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/luoqi1024/magpie-workspace-sync.git"
+                   },
+    "homepage":  "https://github.com/luoqi1024/magpie-workspace-sync#readme",
+    "bugs":  {
+                 "url":  "https://github.com/luoqi1024/magpie-workspace-sync/issues"
+             },
+    "engines":  {
+                    "node":  "\u003e=22"
+                },
+    "files":  [
+                  "index.js",
+                  "src",
+                  "page",
+                  "ui",
+                  "README.md",
+                  "README.zh-CN.md",
+                  "LICENSE"
+              ],
+    "scripts":  {
+                    "test":  "node --test --no-warnings \"test/**/*.test.js\""
+                },
+    "magpie":  {
+                   "page":  {
+                                "title":  "Workspace Sync",
+                                "titles":  {
+                                               "zh":  "工作区同步",
+                                               "zh-TW":  "工作區同步",
+                                               "ja":  "ワークスペース同期"
+                                           },
+                                "file":  "page/index.html",
+                                "icon":  "page/icon.svg",
+                                "keepAlive":  false,
+                                "service":  {
+                                                "port":  3481,
+                                                "option":  "port"
+                                            }
+                            },
+                   "name":  "Workspace Sync · 工作区同步",
+                   "icon":  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCcgZmlsbD0nbm9uZScgc3Ryb2tlPScjNmI5M2ZmJyBzdHJva2Utd2lkdGg9JzEuOCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz48cGF0aCBkPSdNMyAxOFY2YTIgMiAwIDAgMSAyLTJoMy41bDIgMkgxOGEyIDIgMCAwIDEgMiAydjInLz48cGF0aCBkPSdNMyAxOGEyIDIgMCAwIDAgMiAyaDQnLz48cGF0aCBkPSdNMjEgMTUuNWE0LjUgNC41IDAgMCAwLTcuNy0yJy8+PHBhdGggZD0nTTEzLjMgMTAuOHYyLjdoMi43Jy8+PHBhdGggZD0nTTEzIDE4LjVhNC41IDQuNSAwIDAgMCA3LjcgMicvPjxwYXRoIGQ9J00yMC43IDIzLjJ2LTIuN0gxOCcvPjwvc3ZnPg==",
+                   "summary":  {
+                                   "en":  "Keeps the workspace (project) lists of Codex, Antigravity, DeepSeek Harness and more in step. One click or automatic; it only adds, and every run can be undone.",
+                                   "zh":  "让 Codex、Antigravity、DeepSeek Harness 等 agent 的工作区（项目）列表保持一致。一键或自动同步，只新增，每次都可撤销。"
+                               }
+               }
 }
